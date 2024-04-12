@@ -1,0 +1,28 @@
+.project-carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+  }
+  
+  .project-card {
+    display: flex;
+    scroll-snap-align: start;
+    margin-right: 20px;
+  }
+  
+  .cover-image {
+    flex: 0 0 auto;
+  }
+  
+  .cover-image img {
+    width: 300px; /* Adjust according to your preference */
+    height: auto;
+  }
+  
+  .project-info {
+    flex: 1;
+  }
+  
+  /* Additional styling can be added for aesthetics */
+  

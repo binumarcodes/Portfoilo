@@ -1,0 +1,19 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #11071F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    -webkit-user-drag: none;
+    width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+    .img {
+        width: 80%;
+    }
+}
