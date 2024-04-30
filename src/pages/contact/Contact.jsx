@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import contactstyle from "./Contact.module.css";
+import Button from '../../components/Button/Button';
 
 function Contact() {
   return (
@@ -38,6 +39,7 @@ function Contact() {
           </a>
         </div>
       </div>
+      <Button btnText={"Let's Connect"} />
     </div>
   );
 }

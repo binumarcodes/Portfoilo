@@ -82,11 +82,10 @@ const textLeave = () => setCursorVariant("default")
       <div className={homestyles["top-content"]}>
         <div className={homestyles["image-container"]}>
           <div>
-            <div className={homestyles.gradient}></div>
             <img src="../src/assets/me.png" alt="" className={homestyles.meImage} />
           </div>
           <div className={homestyles["top-right-content"]}>
-            <img src="../src/assets/Arrow.png" alt="" className={homestyles.arrowImage} />
+            <div className={homestyles["arrow"]}></div>
             <motion.div
      className={homestyles["cursor"]}
      variants={variants}

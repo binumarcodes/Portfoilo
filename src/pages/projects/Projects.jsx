@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import projectsstyle from "./Projects.module.css";
+import Button from '../../components/Button/Button';
 
 function Projects() {
   const projectsRef = useRef(null);
@@ -24,6 +25,16 @@ function Projects() {
       description: "A marketplace application tailored for small businesses and skilled individuals, offering a convenient search feature where users can input their desired products or services to find local offerings around his/her location",
       image: "/public/BrandmeShop.png",
       hoverImage: "/public/BrandmeShop.png",
+      gradient: "/public/Gradient.png",
+      icon: "/public/IconClick.png"
+    },
+    {
+      id: 3,
+      title: "Packs",
+      heading: "Pair to Pair",
+      description: "A native pair to pair interactions among a maximum of four users per post, with the added feature of enabling others to like one user, fostering friendly competition.",
+      image: "/public/packs.jpg",
+      hoverImage: "/public/packs.JPG",
       gradient: "/public/Gradient.png",
       icon: "/public/IconClick.png"
     },
@@ -56,8 +67,8 @@ function Projects() {
   }, []);
 
   return (
-    <div className={projectsstyle["container"]} ref={projectsRef}>
-      <h2 className={projectsstyle["head-text"]}>The Mobile</h2>
+    <div className={projectsstyle["container"]} ref={projectsRef} id='projects'>
+      {/* <h2 className={projectsstyle["head-text"]}>The Mobile</h2> */}
       {projects.map((project, index) => (
         <div key={project.id} className={index % 2 === 1 ? projectsstyle["contents-reverse"] : projectsstyle["contents"]}>
           <div className={projectsstyle["left"]}>
@@ -67,8 +78,11 @@ function Projects() {
             <div className={projectsstyle["project-card"]}>
               <p className={projectsstyle["project-desc"]}>{project.description}</p>
             </div>
-            <img src={project.icon} alt="" className={projectsstyle["icon-click"]} />
-            <img src={project.icon} alt="" className={projectsstyle["icon-click"]} />
+            <div className={projectsstyle["btn-container"]}>
+              <img src={project.icon} alt="" className={projectsstyle["icon-click"]} />
+              <button className={projectsstyle["skill-btn"]}>Learn More</button>
+              <img src={project.icon} alt="" className={projectsstyle["icon-click"]} />
+            </div>
           </div>
           <div className={projectsstyle["right"]}>
             <img

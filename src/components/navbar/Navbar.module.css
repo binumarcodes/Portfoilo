@@ -1,5 +1,5 @@
 .container {
-    background: #1A0B2E;
+    background: #1a0b2ef8;
     width: 100vw;
     height: 80px;
     display: flex;
@@ -51,8 +51,9 @@ a {
     text-decoration: none;
     font-size: 13px;
     font-weight: 500;
-    font-family: 'Tahoma', 'Courier New', Courier, monospace;
+    font-family: 'Preahvihear', sans-serif;
     transition: .5s ease;
+    cursor: pointer;
 }
 
 

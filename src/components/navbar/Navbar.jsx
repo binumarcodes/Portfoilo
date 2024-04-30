@@ -9,8 +9,8 @@ function Navbar() {
       </div>
       <ul className="nav-links">
         <li><a href="#">Home<span className={navberstyles["link-line"]}></span></a></li>
-        <li><a href="#">About<span className={navberstyles["link-line"]}></span></a></li>
-        <li><a href="#">Lab<span className={navberstyles["link-line"]}></span></a></li>
+        <li><a href="#about">About<span className={navberstyles["link-line"]}></span></a></li>
+        <li><a href="#projects">Lab<span className={navberstyles["link-line"]}></span></a></li>
       </ul>
     </div>
   )
