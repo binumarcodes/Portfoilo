@@ -164,7 +164,7 @@
     }
     
     .project-card {
-        width: 369px;
+        width: 90vw;
         /* height: 165px; */
         background: rgba(255, 255, 255, 0.2);
         border-radius: 14px;
@@ -176,7 +176,6 @@
     }
     
     .project-desc {
-        width: 90vw;
         color: #fff;
         font-size: 12px;
         font-family: 'Preahvihear', sans-serif;
