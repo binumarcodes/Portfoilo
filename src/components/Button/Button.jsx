@@ -1,18 +1,14 @@
-import React from 'react'
-import buttonstyles from "./Button.module.css"
+import React from 'react';
+import buttonstyles from "./Button.module.css";
 
-const toEmail = () => {
-  return (
-  <a href="mailto:abdulrahmanbinumar178@gmail.com" />
-)
-}
-
-function Button({btnText}) {
+function Button({ btnText }) {
   return (
     <div>
-      <button className={buttonstyles["connect-btn"]} onClick={toEmail}>{btnText}</button>
+      <a href="mailto:abdulrahmanbinumar178@gmail.com">
+        <button className={buttonstyles["connect-btn"]}>{btnText}</button>
+      </a>
     </div>
-  )
+  );
 }
 
-export default Button
+export default Button;
