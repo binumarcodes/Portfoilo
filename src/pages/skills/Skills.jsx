@@ -1,10 +1,11 @@
 import React from 'react'
 import skillsstyle from "./Skills.module.css"
+import Skills from "../../../src/assets/Skills.png" 
 
 function Skills() {
   return (
     <div className={skillsstyle["container"]}>
-      <img src="../src/assets/Skills.png" alt="" className={skillsstyle["img"]} />
+      <img src={me} alt="" className={skillsstyle["img"]} />
       <div id='projects' className={skillsstyle["projects-id"]}></div>
     </div>
   )
