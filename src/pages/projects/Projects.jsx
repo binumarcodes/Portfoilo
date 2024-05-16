@@ -3,14 +3,13 @@ import { gsap } from 'gsap';
 import projectsstyle from "./Projects.module.css";
 import Button from '../../components/Button/Button';
 
-// Import images
 import Brandme from '../../assets/Brandme.png';
 import BrandmeHover from '../../assets/Brandme-hover.png';
 import Gradient from '../../assets/Gradient.png';
 import IconClick from '../../assets/IconClick.png';
 import BrandmeShop from '../../assets/BrandmeShop.png';
 import Packs from '../../assets/packs.jpg';
-import PacksHover from '../../assets/packs.png';
+import PacksHover from '../../assets/packs.MOV';
 
 function Projects() {
   const projectsRef = useRef(null);
