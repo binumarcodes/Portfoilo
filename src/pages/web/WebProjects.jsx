@@ -30,7 +30,7 @@ function WebProjects() {
     </div>
       
     <div className={webstyles["card2"]}>
-    <p className={webstyles["title2"]}>Nigerian Navy Mussium Web App</p>
+    <p className={webstyles["title2"]}>Nigerian Navy Mussium App</p>
     <p className={webstyles["title3"]}>Commands</p>
     <button className={webstyles["skill-btn"]}>Learn More</button>
 
