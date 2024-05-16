@@ -1,5 +1,9 @@
 import React from 'react'
 import webstyles from "./WebProjects.module.css"
+import Arrow from "../../../src/assets/Arrow.png"
+import Web1 from "../../../src/assets/Web1.png"
+import Web2 from "../../../src/assets/Web2.png"
+
 
 function WebProjects() {
   return (
@@ -11,7 +15,7 @@ function WebProjects() {
               <img src="../src/assets/me.png" alt="" className={webstyles.meImage} />
             </div>
         <div className={webstyles["arrow-container"]}>
-          <img src="src/assets/arrow.png" alt="Arrow" className={webstyles["arrow"]} />
+          <img src={Arrow} alt="Arrow" className={webstyles["arrow"]} />
         </div>
       </div>
       
@@ -21,7 +25,7 @@ function WebProjects() {
     <button className={webstyles["skill-btn"]}>Learn More</button>
 
     <div className={webstyles["image-container"]}>
-      <img src="src/assets/web1.png" alt="Arrow" className={webstyles["web-img"]} />
+      <img src={Web1} alt="Arrow" className={webstyles["web-img"]} />
       </div>
     </div>
       
@@ -31,7 +35,7 @@ function WebProjects() {
     <button className={webstyles["skill-btn"]}>Learn More</button>
 
     <div className={webstyles["image-container"]}>
-      <img src="src/assets/web2.png" alt="Arrow" className={webstyles["web-img"]} />
+      <img src={Web2} alt="Arrow" className={webstyles["web-img"]} />
       </div>
     </div>
     </div>
