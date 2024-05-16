@@ -2,9 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import projectsstyle from "./Projects.module.css";
 import Button from '../../components/Button/Button';
-import BrandMe from "../../../public/BrandMe.png"
-import BrandMeHover from "../../../public/Brandme-hover.png"
-
 
 function Projects() {
   const projectsRef = useRef(null);
@@ -16,8 +13,8 @@ function Projects() {
       title: "BrandMe",
       heading: "Social Media",
       description: "A social media platform facilitating interactions among a maximum of four users per post, with the added feature of enabling others to like one user, fostering friendly competition.",
-      image: {BrandMe},
-      hoverImage: {BrandMeHover},
+      image: "/public/Brandme.png",
+      hoverImage: "/public/Brandme-hover.png",
       gradient: "/public/Gradient.png",
       icon: "/public/IconClick.png"
     },
