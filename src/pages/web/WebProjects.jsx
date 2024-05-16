@@ -20,8 +20,8 @@ function WebProjects() {
       </div>
       
     <div className={webstyles["card2"]}>
-    <p className={webstyles["title2"]}>Multiplayer Web App</p>
-    <p className={webstyles["title3"]}>Emoji Swap</p>
+    <p className={webstyles["title2"]}>Construction Company Web App</p>
+    <p className={webstyles["title3"]}>Shelter Buildings</p>
     <button className={webstyles["skill-btn"]}>Learn More</button>
 
     <div className={webstyles["image-container"]}>
