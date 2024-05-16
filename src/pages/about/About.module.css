@@ -124,6 +124,7 @@
     .card {
         width: 90vw;
         margin-top: 3rem;
+        height: 600px;
     }
 
     .card2 {
