@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import homestyles from "./Home.module.css";
 import {motion} from 'framer-motion'
 import { height } from '@fortawesome/free-brands-svg-icons/fa42Group'
-import CartoonMe from "../../../src/assets/Me.png" 
+import CartoonMe from "../../../src/assets/memoji.png" 
 
 function Home() {
   const titles = ["Software Engineer", "Web Developer", "Mobile Developer"];
