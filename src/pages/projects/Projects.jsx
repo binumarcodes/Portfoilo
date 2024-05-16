@@ -8,8 +8,8 @@ import BrandmeHover from '../../assets/Brandme-hover.png';
 import Gradient from '../../assets/Gradient.png';
 import IconClick from '../../assets/IconClick.png';
 import BrandmeShop from '../../assets/BrandmeShop.png';
-import Packs from '../../assets/packs.jpg';
-import PacksHover from '../../assets/packs.MOV';
+import Packs from '../../assets/packs.png';
+import PacksHover from '../../assets/packs.mov';
 
 function Projects() {
   const projectsRef = useRef(null);
