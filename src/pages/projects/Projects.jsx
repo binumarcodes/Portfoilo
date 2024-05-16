@@ -9,7 +9,7 @@ import Gradient from '../../assets/Gradient.png';
 import IconClick from '../../assets/IconClick.png';
 import BrandmeShop from '../../assets/BrandmeShop.png';
 import Packs from '../../assets/packs.png';
-import PacksHover from '../../assets/packs.MOV';
+import PacksHover from '../../assets/packs.mp4';
 
 function Projects() {
   const projectsRef = useRef(null);
