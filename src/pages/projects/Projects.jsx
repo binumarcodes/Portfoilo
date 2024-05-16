@@ -2,9 +2,15 @@ import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import projectsstyle from "./Projects.module.css";
 import Button from '../../components/Button/Button';
-import BrandMe from "../../../public/BrandMe.png"
-import BrandMeHover from "../../../public/Brandme-hover.png"
 
+// Import images
+import Brandme from '../../assets/Brandme.png';
+import BrandmeHover from '../../assets/Brandme-hover.png';
+import Gradient from '../../assets/Gradient.png';
+import IconClick from '../../assets/IconClick.png';
+import BrandmeShop from '../../assets/BrandmeShop.png';
+import Packs from '../../assets/packs.jpg';
+import PacksHover from '../../assets/packs.JPG';
 
 function Projects() {
   const projectsRef = useRef(null);
@@ -16,30 +22,30 @@ function Projects() {
       title: "BrandMe",
       heading: "Social Media",
       description: "A social media platform facilitating interactions among a maximum of four users per post, with the added feature of enabling others to like one user, fostering friendly competition.",
-      image: {BrandMe},
-      hoverImage: {BrandMeHover},
-      gradient: "/public/Gradient.png",
-      icon: "/public/IconClick.png"
+      image: Brandme,
+      hoverImage: BrandmeHover,
+      gradient: Gradient,
+      icon: IconClick
     },
     {
       id: 2,
       title: "BrandMe Shop",
       heading: "Market Place",
       description: "A marketplace application tailored for small businesses and skilled individuals, offering a convenient search feature where users can input their desired products or services to find local offerings around his/her location",
-      image: "/public/BrandmeShop.png",
-      hoverImage: "/public/BrandmeShop.png",
-      gradient: "/public/Gradient.png",
-      icon: "/public/IconClick.png"
+      image: BrandmeShop,
+      hoverImage: BrandmeShop,
+      gradient: Gradient,
+      icon: IconClick
     },
     {
       id: 3,
       title: "Packs",
       heading: "Pair to Pair",
       description: "A native pair to pair interactions among a maximum of four users per post, with the added feature of enabling others to like one user, fostering friendly competition.",
-      image: "/public/packs.jpg",
-      hoverImage: "/public/packs.JPG",
-      gradient: "/public/Gradient.png",
-      icon: "/public/IconClick.png"
+      image: Packs,
+      hoverImage: PacksHover,
+      gradient: Gradient,
+      icon: IconClick
     },
   ];
 
@@ -71,7 +77,6 @@ function Projects() {
 
   return (
     <div className={projectsstyle["container"]} ref={projectsRef} id='projects'>
-      {/* <h2 className={projectsstyle["head-text"]}>The Mobile</h2> */}
       {projects.map((project, index) => (
         <div key={project.id} className={index % 2 === 1 ? projectsstyle["contents-reverse"] : projectsstyle["contents"]}>
           <div className={projectsstyle["left"]}>

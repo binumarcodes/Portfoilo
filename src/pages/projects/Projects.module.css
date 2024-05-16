@@ -176,6 +176,7 @@
     }
     
     .project-desc {
+        width: 90vw;
         color: #fff;
         font-size: 12px;
         font-family: 'Preahvihear', sans-serif;
