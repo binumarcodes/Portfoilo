@@ -122,10 +122,16 @@
     }
     
     .card {
+        width: 800px;
         margin-top: 3rem;
+    }
+
+    .card2 {
+        width: 800px;
     }
     
     .card3 {
+        width: 800px;
         margin-bottom: 3rem;
     }
 
