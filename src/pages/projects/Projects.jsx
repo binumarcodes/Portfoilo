@@ -10,7 +10,7 @@ import Gradient from '../../assets/Gradient.png';
 import IconClick from '../../assets/IconClick.png';
 import BrandmeShop from '../../assets/BrandmeShop.png';
 import Packs from '../../assets/packs.jpg';
-import PacksHover from '../../assets/packs.JPG';
+import PacksHover from '../../assets/packs.png';
 
 function Projects() {
   const projectsRef = useRef(null);
