@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import homestyles from "./Home.module.css";
 import {motion} from 'framer-motion'
 import { height } from '@fortawesome/free-brands-svg-icons/fa42Group'
+import CartoonMe from "../../../src/assets/Me.png" 
 
 function Home() {
   const titles = ["Software Engineer", "Web Developer", "Mobile Developer"];
@@ -82,7 +83,7 @@ const textLeave = () => setCursorVariant("default")
       <div className={homestyles["top-content"]}>
         <div className={homestyles["image-container"]}>
           <div>
-            <img src="../src/assets/me.png" alt="" className={homestyles.meImage} />
+            <img src={CartoonMe} alt="" className={homestyles.meImage} />
           </div>
           <div className={homestyles["top-right-content"]}>
             <div className={homestyles["arrow"]}></div>
