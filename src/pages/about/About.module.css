@@ -41,7 +41,7 @@
     padding: 1rem;
     background: #1a0b2ef8;
     width: 350px;
-    height: 310px;
+    height: 320px;
     border-radius: 10px;
     transition: 0.4s ease-in-out;
     box-shadow: 0 3px #291247f8;
@@ -129,10 +129,12 @@
 
     .card2 {
         width: 90vw;
+        height: 280px;
     }
     
     .card3 {
         width: 90vw;
+        height: 330px;
         margin-bottom: 3rem;
     }
 
