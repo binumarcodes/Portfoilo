@@ -74,6 +74,10 @@ function Projects() {
     };
   }, []);
 
+  const handleGithub = () => {
+    window.open("https://github.com/binumarcodes", "_blank")
+  }
+
   return (
     <div className={projectsstyle["container"]} ref={projectsRef} id='projects'>
       {projects.map((project, index) => (
@@ -87,7 +91,7 @@ function Projects() {
             </div>
             <div className={projectsstyle["btn-container"]}>
               <img src={project.icon} alt="" className={projectsstyle["icon-click"]} />
-              <button className={projectsstyle["skill-btn"]}>Learn More</button>
+              <button className={projectsstyle["skill-btn"]} onClick={handleGithub}>Learn More</button>
               <img src={project.icon} alt="" className={projectsstyle["icon-click"]} />
             </div>
           </div>
