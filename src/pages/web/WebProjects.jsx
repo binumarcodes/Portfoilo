@@ -6,6 +6,11 @@ import Web2 from "../../../src/assets/Web2.png"
 
 
 function WebProjects() {
+
+  const handleGithub = () => {
+    window.open("https://github.com/binumarcodes", "_blank")
+  }
+
   return (
     <div className={webstyles["container"]}>
       <div className={webstyles["card"]}>
@@ -22,7 +27,7 @@ function WebProjects() {
     <div className={webstyles["card2"]}>
     <p className={webstyles["title2"]}>Construction Company Web App</p>
     <p className={webstyles["title3"]}>Shelter Buildings</p>
-    <button className={webstyles["skill-btn"]}>Learn More</button>
+    <button className={webstyles["skill-btn"]} onClick={handleGithub}>Learn More</button>
 
     <div className={webstyles["image-container"]}>
       <img src={Web1} alt="Arrow" className={webstyles["web-img"]} />
