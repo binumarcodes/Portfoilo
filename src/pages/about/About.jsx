@@ -14,7 +14,7 @@ function About() {
             </div>
             <p className={aboutstyles["card-greetings"]}>Hey again 👋</p>
             <p className={aboutstyles["card-text"]}>
-                I am currently an intern at iT Central. Where i got to create some experiences that are functional, fun and possitively impact people's lives by making their life less painful and more pleasurable . 
+                I am currently a junior partner at iT Central. Where i got to create some experiences that are functional, fun and possitively impact people's lives by making their life less painful and more pleasurable. 
                 </p>
                 <Button btnText={"Let's Connect"} />
         </div> 
@@ -27,7 +27,7 @@ function About() {
                 I'm very good at styling and shapping components.
                 And i also love to fetch data.
                 I'm studying English at the university which helps me with the communication skills.
-                I started coding in Dec, 2021.
+                I started coding in Dec, 2019.
                 My passion for computer began since when i was in primary school by the time i saw computer in the computer room. 
                 </p>
                 <button className={aboutstyles["skill-btn"]}>Download CV</button>
@@ -36,12 +36,12 @@ function About() {
             <p className={aboutstyles["card-greetings"]}>Experience</p>
             <button className={aboutstyles["skill-btn2"]}>React JS</button>
                 <p className={aboutstyles["card-text"]}>
-                    I am currently an intern at iT Central. I am 20 years old. I am currently an intern at iT Central. I am currently an intern at iT Central. 
+                Skilled in building dynamic web applications with ReactJS, focusing on reusable components, state management with Redux, and API integration.
                 </p>
                 <hr style={{borderColor: "gray", marginTop: 5, marginBottom: 5}}/>
                 <button className={aboutstyles["skill-btn2"]}>React Native</button>
                 <p className={aboutstyles["card-text"]}>
-                    I am currently an intern at iT Central. I am 20 years old. I am currently an intern at iT Central. I am currently an intern at iT Central. 
+                Experienced in developing cross-platform mobile apps using React Native, ensuring high performance and seamless user experiences on iOS and Android. 
                 </p>
         </div> 
       </div>
