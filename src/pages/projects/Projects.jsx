@@ -40,7 +40,7 @@ function Projects() {
       id: 3,
       title: "Packs",
       heading: "Pair to Pair",
-      description: "A native pair to pair interactions among a maximum of four users per post, with the added feature of enabling others to like one user, fostering friendly competition.",
+      description: "Packs is a peer-to-peer app that connects travelers with people needing items delivered to their destination. Travelers can search for delivery requests, earn extra money, and provide a helpful service. The app features secure payments, real-time tracking, and user ratings to ensure a reliable experience.",
       image: Packs,
       hoverImage: Packs,
       gradient: Gradient,
