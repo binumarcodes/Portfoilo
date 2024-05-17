@@ -4,6 +4,11 @@ import Me from "../../../src/assets/Me.jpg"
 import Button from '../../components/Button/Button'
 
 function About() {
+
+  const handleDownloadCV = () => {
+    window.open("https://docs.google.com/document/d/1bIdvQHbMg32K7et6bTHZl3OErqp6kSAsXXMgSyodeNw/edit?usp=sharing", "_blank");
+  };
+
   return (
     <div className={aboutstyles["container"]} id='about'>
     <div className={aboutstyles["cards"]}>
@@ -30,7 +35,7 @@ function About() {
                 I started coding in Dec, 2019.
                 My passion for computer began since when i was in primary school by the time i saw computer in the computer room. 
                 </p>
-                <button className={aboutstyles["skill-btn"]}>Download CV</button>
+                <button className={aboutstyles["skill-btn"]} onClick={handleDownloadCV}>Download CV</button>
         </div> 
         <div className={aboutstyles["card3"]}>
             <p className={aboutstyles["card-greetings"]}>Experience</p>
