@@ -14,7 +14,7 @@ function WebProjects() {
   return (
     <div className={webstyles["container"]}>
       <div className={webstyles["card"]}>
-        <p className={webstyles["heading"]}>Look at how i craft and shape <span style={{ textDecoration: "wavy"}}>Web</span> apps </p>
+        <p className={webstyles["heading"]}>Look at how i also craft and shape <span style={{ textDecoration: "wavy"}}>Web</span> apps </p>
             <div  className={webstyles["sub-title"]}>
               <p className={webstyles["title"]}>Play with the Web</p>
               <img src="../src/assets/me.png" alt="" className={webstyles.meImage} />
