@@ -8,11 +8,9 @@ import Button from '../../components/Button/Button';
 function Contact() {
   return (
     <div className={contactstyle["container"]}>
-      <h3 className={contactstyle["heading"]}>Contact</h3>
-      <p className={contactstyle["contact-text"]}>
-        I'm currently looking to join a cross-functional team that values improving people's lives through accessible development. or have a project in mind? Let's connect.
-      </p>
-        <hr />
+      
+        {/* <hr /> */}
+        {/* <div className={contactstyle["contact-text"]}></div> */}
       <div className={contactstyle["contact-info"]}>
         <div>
           <p className={contactstyle["icon-title"]}>Email: </p>
@@ -39,7 +37,15 @@ function Contact() {
           </a>
         </div>
       </div>
+
+      <div>
+      <h3 className={contactstyle["heading"]}>Contact</h3>
+      <p className={contactstyle["contact-text"]}>
+        I'm currently looking to join a cross-functional team that values improving people's lives through accessible development. or have a project in mind? Let's connect.
+      </p>
       <Button btnText={"Let's Connect"} />
+
+      </div>
     </div>
   );
 }

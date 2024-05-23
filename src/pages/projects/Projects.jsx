@@ -3,12 +3,12 @@ import { gsap } from 'gsap';
 import projectsstyle from "./Projects.module.css";
 import Button from '../../components/Button/Button';
 
-import Brandme from '../../assets/Brandme.png';
-import BrandmeHover from '../../assets/Brandme-hover.png';
-import Gradient from '../../assets/Gradient.png';
-import IconClick from '../../assets/IconClick.png';
-import BrandmeShop from '../../assets/BrandmeShop.png';
-import Packs from '../../assets/packs.png';
+import Brandme from '/src/assets/BrandMe.png';
+import BrandmeHover from '/src/assets/Brandme-hover.png';
+import Gradient from '/src/assets/Gradient.png';
+import IconClick from '/src/assets/IconClick.png';
+import BrandmeShop from '/src/assets/BrandMeShop.png';
+import Packs from '/src/assets/packs.png';
 // import PacksHover from '../../assets/packs.mp4';
 
 function Projects() {

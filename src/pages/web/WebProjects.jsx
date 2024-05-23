@@ -1,8 +1,8 @@
 import React from 'react'
 import webstyles from "./WebProjects.module.css"
-import Arrow from "../../../src/assets/Arrow.png"
-import Web1 from "../../../src/assets/Web1.png"
-import Web2 from "../../../src/assets/Web2.png"
+import Arrow from "../../assets/Arrow.png"
+import Web1 from "../../assets/web1.png"
+import Web2 from "../../assets/web2.png"
 
 
 function WebProjects() {
@@ -35,7 +35,7 @@ function WebProjects() {
     </div>
       
     <div className={webstyles["card2"]}>
-    <p className={webstyles["title2"]}>Nigerian Navy Mussium App</p>
+    <p className={webstyles["title2"]}>Nigerian Navy Museum App</p>
     <p className={webstyles["title3"]}>Commands</p>
     <button className={webstyles["skill-btn"]}>Learn More</button>
 
