@@ -3,17 +3,11 @@
     /* height: 100vh; */
     padding: 2rem 6rem;
     background: #11071F;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; */
     overflow-x: hidden;
-    border-top: 1px solid gray;
 }
-
-/* .contact-text {
-    border-top: 1px solid gray;
-
-} */
 
 .contact-text {
     color: #fff;
@@ -44,7 +38,6 @@
     .container {
         padding: 2rem;
         overflow-x: hidden;
-        font-display: column;
     }
     
     .contact-text {

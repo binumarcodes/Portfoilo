@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import homestyles from "./Home.module.css";
-import {motion} from 'framer-motion'
-import { height } from '@fortawesome/free-brands-svg-icons/fa42Group'
-import CartoonMe from "../../../src/assets/memoji.png" 
+import CartoonMe from "../../../src/assets/memoji.png";
 
 function Home() {
   const titles = ["Software Engineer", "Web Developer", "Mobile Developer"];
@@ -13,7 +12,6 @@ function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-
       if (typedText === titles[titleIndex]) {
         setIsDeleting(true);
       }
@@ -26,9 +24,7 @@ function Home() {
         }
       });
 
-
       if (isDeleting && typedText === '') {
-
         setIsDeleting(false);
         setTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
       }
@@ -40,43 +36,48 @@ function Home() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
-})
+  });
 
-const [cursorVariant, setCursorVariant] = useState("default")
+  const [cursorVariant, setCursorVariant] = useState("default");
 
-useEffect(() => {
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      });
+    };
 
-    const mouseMove = e => {
-        setMousePosition({
-            x: e.clientX,
-            y: e.clientY
-        })
-    }
-
-    window.addEventListener("mousemove", mouseMove)
+    window.addEventListener("mousemove", mouseMove);
 
     return () => {
-        window.removeEventListener("mousemove", mouseMove)
-    }
-}, [])
+      window.removeEventListener("mousemove", mouseMove);
+    };
+  }, []);
 
-const variants = {
+  const variants = {
     default: {
-        x: mousePosition.x - 16,
-        y: mousePosition.y - 16
+      width: 32,
+      height: 32,
+      backgroundColor: "#ffffff",
+      borderRadius: "50%",
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
+      transition: { type: "spring", stiffness: 500, damping: 30 }
     },
     text: {
-        width: 150,
-        height: 150,
-        x: mousePosition.x - 75,
-        y: mousePosition.y - 75,
-        backgroundColor: "#7127BA",
-        mixBlendMode: "difference"
+      width: 150,
+      height: 150,
+      backgroundColor: "#7127BA",
+      mixBlendMode: "difference",
+      x: mousePosition.x - 75,
+      y: mousePosition.y - 75,
+      transition: { type: "spring", stiffness: 500, damping: 30 }
     }
-}
+  };
 
-const textEnter = () => setCursorVariant("text")
-const textLeave = () => setCursorVariant("default")
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
 
   return (
     <div className={homestyles.container}>
@@ -88,14 +89,24 @@ const textLeave = () => setCursorVariant("default")
           <div className={homestyles["top-right-content"]}>
             <div className={homestyles["arrow"]}></div>
             <motion.div
-     className={homestyles["cursor"]}
-     variants={variants}
-     animate={cursorVariant} />
-            <p onMouseEnter={textEnter} onMouseLeave={textLeave} className={homestyles["greeting-text"]}>Hello, I'm <span style={{ color: "#7127BA" }}>Abdulrahman Bin Umar</span></p>
+              className={homestyles["cursor"]}
+              variants={variants}
+              animate={cursorVariant}
+              style={{ position: 'fixed', top: 0, left: 0 }}
+            />
+            <p onMouseEnter={textEnter} onMouseLeave={textLeave} className={homestyles["greeting-text"]}>
+              Hello, I'm <span style={{ color: "#7127BA" }}>Abdulrahman Bin Umar</span>
+            </p>
             <div className={homestyles["about-content"]}>
-              <p className={homestyles["about1"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>A Developer who</p>
-              <p className={homestyles["about2"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>Treats <span style={{ color: "#7127BA" }} onMouseEnter={textEnter} onMouseLeave={textLeave}>code</span> like poetry...</p>
-              <p className={homestyles["about3"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>Because if it doesn't evoke beauty and clarity, what else can?</p>
+              <p className={homestyles["about1"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                A Developer who
+              </p>
+              <p className={homestyles["about2"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                Treats <span style={{ color: "#7127BA" }} onMouseEnter={textEnter} onMouseLeave={textLeave}>code</span> like poetry...
+              </p>
+              <p className={homestyles["about3"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                Because if it doesn't evoke beauty and clarity, what else can?
+              </p>
             </div>
           </div>
         </div>
@@ -106,8 +117,12 @@ const textLeave = () => setCursorVariant("default")
           I'm a {typedText}
           <span className={homestyles.typingCursor}>|</span>
         </h1>
-        <p className={homestyles["about5"]}>Currently, am an intern at <span style={{ color: "#0175a3" }}><a href="https://itcentral.ng/" className={homestyles["itlink"]}>iT Central NG</a> </span> </p>
-        <p className={homestyles["about6"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>As a dedicated Frontend Developer, I've delved into the world of web and mobile app development for over 2 years. With a keen eye for detail and a passion for innovation, I strive to create user-centric digital solutions that seamlessly integrate form and function. Because in the realm of technology, the user's journey begins with an interface that speaks volumes.</p>
+        <p className={homestyles["about5"]}>
+          Currently, am an intern at <span style={{ color: "#0175a3" }}><a href="https://itcentral.ng/" className={homestyles["itlink"]}>iT Central NG</a> </span>
+        </p>
+        <p className={homestyles["about6"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          As a dedicated Frontend Developer, I've delved into the world of web and mobile app development for over 2 years. With a keen eye for detail and a passion for innovation, I strive to create user-centric digital solutions that seamlessly integrate form and function. Because in the realm of technology, the user's journey begins with an interface that speaks volumes.
+        </p>
       </div>
     </div>
   );
