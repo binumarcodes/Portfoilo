@@ -22,7 +22,7 @@ function App() {
       {/* <Experience /> */}
       <Skills />
       <Projects />
-      <WebProjects />
+      {/* <WebProjects /> */}
       <Contact />
       {/* <CustomCursor /> */}
     </>
