@@ -117,11 +117,11 @@ function Home() {
           I'm a {typedText}
           <span className={homestyles.typingCursor}>|</span>
         </h1>
-        <p className={homestyles["about5"]}>
+        {/* <p className={homestyles["about5"]}>
           Currently, am an intern at <span style={{ color: "#0175a3" }}><a href="https://itcentral.ng/" className={homestyles["itlink"]}>iT Central NG</a> </span>
-        </p>
+        </p> */}
         <p className={homestyles["about6"]} onMouseEnter={textEnter} onMouseLeave={textLeave}>
-          As a dedicated Frontend Developer, I've delved into the world of web and mobile app development for over 2 years. With a keen eye for detail and a passion for innovation, I strive to create user-centric digital solutions that seamlessly integrate form and function. Because in the realm of technology, the user's journey begins with an interface that speaks volumes.
+          As a dedicated Frontend Developer, I've delved into the world of web and mobile app development for over 4 years. With a keen eye for detail and a passion for innovation, I strive to create user-centric digital solutions that seamlessly integrate form and function. Because in the realm of technology, the user's journey begins with an interface that speaks volumes.
         </p>
       </div>
     </div>
