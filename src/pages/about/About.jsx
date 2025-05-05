@@ -28,7 +28,7 @@ function About() {
         <div className={aboutstyles["card2"]}>
             <p className={aboutstyles["card-greetings"]}>A little bit about me</p>
             <p className={aboutstyles["card-text"]}>
-                I am a 20 year old software engineer.
+                I am a 21 year old software engineer.
                 I'm very good at styling and shapping components.
                 And i also love to fetch data.
                 I'm studying English at the university which helps me with the communication skills.
