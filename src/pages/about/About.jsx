@@ -19,8 +19,8 @@ function About() {
             </div>
             <p className={aboutstyles["card-greetings"]}>Hey again 👋</p>
             <p className={aboutstyles["card-text"]}>
-                I am currently an intern at iT Central. Where i got to create some experiences that are functional, fun and possitively impact people's lives by making their life less painful and more pleasurable. 
-                </p>
+              I worked at iT Central, where I helped create experiences that are functional, fun, and positively impact people's lives by making their tasks easier and more enjoyable.
+            </p>
                 <Button btnText={"Let's Connect"} />
         </div> 
       </div>
@@ -28,7 +28,7 @@ function About() {
         <div className={aboutstyles["card2"]}>
             <p className={aboutstyles["card-greetings"]}>A little bit about me</p>
             <p className={aboutstyles["card-text"]}>
-                I am a 21 years old software engineer.
+                I am a 22 years old software engineer.
                 I'm very good at styling and shapping components.
                 And i also love to fetch data.
                 I'm studying English at the university which helps me with the communication skills.

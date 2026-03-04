@@ -3,8 +3,8 @@ import { gsap } from 'gsap';
 import projectsstyle from "./Projects.module.css";
 import Button from '../../components/Button/Button';
 
-import Brandme from '/src/assets/BrandMe.png';
-import BrandmeHover from '/src/assets/Brandme-hover.png';
+import Brandme from '/src/assets/learnfi1.jpg';
+import BrandmeHover from '/src/assets/learnfi2.jpg';
 import Gradient from '/src/assets/Gradient.png';
 import IconClick from '/src/assets/IconClick.png';
 import BrandmeShop from '/src/assets/BrandMeShop.png';
@@ -18,9 +18,9 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "BrandMe",
-      heading: "Social Media",
-      description: "A social media platform facilitating interactions among a maximum of four users per post, with the added feature of enabling others to like one user, fostering friendly competition.",
+      title: "LearnFi",
+      heading: "EdTech",
+      description: "A TikTok-like learning app delivering short, interactive video lessons with quizzes, where learners earn XP, maintain streaks, and engage with tutors through likes and gifts, achieving 22,650 downloads on Palmstore.",
       image: Brandme,
       hoverImage: BrandmeHover,
       gradient: Gradient,
